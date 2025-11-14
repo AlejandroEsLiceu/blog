@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
     body {
       background-color: #0d0f1a;
       color: #fff;
@@ -6,10 +9,13 @@
     .navbar {
       background-color: #121422 !important;
     }
-    .navbar-brand {
-      font-weight: 700;
-      color: #fff !important;
+
+    .inter {
+     font-family: "Inter", sans-serif;
+      font-optical-sizing: auto;
+     font-style: normal;
     }
+
     .hero {
       margin-top: 3rem;
     }
@@ -43,7 +49,7 @@
       border-top-left-radius: 10px;
       border-top-right-radius: 10px;
       height: 200px;
-      object-fit: cover;
+      object-fit: cover;  
     }
     .ad-box {
       background-color: #1d2233;
@@ -52,4 +58,14 @@
       padding: 2rem;
       margin: 3rem 0;
       border-radius: 10px;
+    }
+
+    .text-principal {
+      color: #ffffff;
+    }
+
+    .input-color {
+      background-color: #1d2233;
+      color: #ffffff;
+      border: 1px solid #3a3a4a
     }
