@@ -1,4 +1,4 @@
-# El meu primer blog fet amb HTML i CSS (Bootstrap)
+# 🆕 El meu primer blog fet amb HTML i CSS (Bootstrap)
 
 Aquest projecte és el meu primer blog desenvolupat utilitzant **HTML**, **CSS** i el framework **Bootstrap**.
 
