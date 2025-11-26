@@ -10,9 +10,10 @@
   <title>MetaBlog</title>
 </head>
 <body>
+
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container">
+        <div class="container inter">
             <a class="navbar-brand" href="index.html">
             Meta<span class="text-primary"><b>Blog</b></span>
             </a>
@@ -33,120 +34,141 @@
         </nav>
     </header>
 
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6 mx-auto">
 
+                <form id="contact-form" role="form">
 
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8 col-lg-6 mx-auto">
+                    <div class="messages"></div>    
 
-            <form id="contact-form" role="form">
+                    <div class="controls">
 
-                <div class="messages"></div>    
+                        <div class="row">
+                            <div class="col-md-6 inter">
+                                <div class="form-group mt-3">
+                                    <label for="form_name">Firstname</label>
+                                    <input id="form_name" type="text" name="name" class="input-color form-control"
+                                        placeholder="Please enter your first name" required="required">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
 
-                <div class="controls">
-
-                    <div class="row">
-                        <div class="col-md-6 inter">
-                            <div class="form-group mt-3">
-                                <label for="form_name">Firstname</label>
-                                <input id="form_name" type="text" name="name" class="input-color form-control"
-                                    placeholder="Please enter your first name" required="required">
-                                <div class="help-block with-errors"></div>
+                            <div class="col-md-6">
+                                <div class="form-group mt-3">
+                                    <label for="form_lastname">Lastname</label>
+                                    <input id="form_lastname" type="text" name="surname" class="input-color form-control"
+                                        placeholder="Please enter your lastname" required="required">
+                                    <div class="help-block with-errors"></div>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="col-md-6">
-                            <div class="form-group mt-3">
-                                <label for="form_lastname">Lastname</label>
-                                <input id="form_lastname" type="text" name="surname" class="input-color form-control"
-                                    placeholder="Please enter your lastname" required="required">
-                                <div class="help-block with-errors"></div>
+                        <div class="row inter">
+                            <div class="col-md-6 mt-3">
+                                <div class="form-group">
+                                    <label for="form_email inter">Email</label>
+                                    <input id="form_email" type="email" name="email" class="input-color form-control"
+                                        placeholder="Please enter your email" required="required">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 mt-3">
+                                <div class="form-group inter">
+                                    <label for="form_need">Please specify your need</label>
+                                    <select id="form_need" name="need" class="input-color form-control" required="required"
+                                        data-error="Please specify your need.">
+                                        <option value=""></option>
+                                        <option value="Request quotation">Request information</option>
+                                        <option value="Request order status">Request order status</option>
+                                        <option value="Request copy of an invoice">Request copy of an invoice</option>
+                                        <option value="Other">Other</option>
+                                    </select>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mt-3">
+                            <div class="col-md-12">
+                                <div class="form-group inter">
+                                    <label for="form_message inter">Message</label>
+                                    <textarea id="form_message" name="message" class="input-color inter form-control" placeholder="Message"
+                                        rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <input type="submit" class="input-color btn btn-success btn-send mt-3" value="Send">
                             </div>
                         </div>
                     </div>
-
-                    <div class="row inter">
-                        <div class="col-md-6 mt-3">
-                            <div class="form-group">
-                                <label for="form_email inter">Email</label>
-                                <input id="form_email" type="email" name="email" class="input-color form-control"
-                                    placeholder="Please enter your email" required="required">
-                                <div class="help-block with-errors"></div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6 mt-3">
-                            <div class="form-group inter">
-                                <label for="form_need">Please specify your need</label>
-                                <select id="form_need" name="need" class="input-color form-control" required="required"
-                                    data-error="Please specify your need.">
-                                    <option value=""></option>
-                                    <option value="Request quotation">Request information</option>
-                                    <option value="Request order status">Request order status</option>
-                                    <option value="Request copy of an invoice">Request copy of an invoice</option>
-                                    <option value="Other">Other</option>
-                                </select>
-                                <div class="help-block with-errors"></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row mt-3">
-                        <div class="col-md-12">
-                            <div class="form-group inter">
-                                <label for="form_message inter">Message</label>
-                                <textarea id="form_message" name="message" class="input-color inter form-control" placeholder="Message"
-                                    rows="4" required="required" data-error="Please, leave us a message."></textarea>
-                                <div class="help-block with-errors"></div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-12">
-                            <input type="submit" class="input-color btn btn-success btn-send mt-3" value="Send">
-                        </div>
-                    </div>
-                </div>
-            </form>
+                </form>
+            </div>
         </div>
     </div>
-</div>
 
-<div class="row justify-content-center">
-    <div class="col-md-8 col-lg-6 mx-auto"></div>
-        <iframe class="col-md-8 mt-3" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4072.5036162299607!2d2.8558612624013544!3d39.64116312145642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1297c734ed19a46d%3A0xcd5607036bd04427!2s07143%20Biniali%2C%20Illes%20Balears!5e1!3m2!1sca!2ses!4v1763120244531!5m2!1sca!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-6 mx-auto"></div>
+            <iframe class="col-md-8 mt-3" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4072.5036162299607!2d2.8558612624013544!3d39.64116312145642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1297c734ed19a46d%3A0xcd5607036bd04427!2s07143%20Biniali%2C%20Illes%20Balears!5e1!3m2!1sca!2ses!4v1763120244531!5m2!1sca!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
     </div>
-</div>
 
-<footer class=" text-light pt-5 pb-4 mt-5 border-top border-secondary">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4 mb-4">
-        <h6 class="fw-bold mb-3">About</h6>
-        <p class="small text-secondary">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-        </p>
-        <p class="mb-1 small"><span class="fw-bold text-light">Email</span> : info@jstemplate.net</p>
-        <p class="small"><span class="fw-bold text-light">Phone</span> : 880 123 456 789</p>
-      </div>
-      <div class="col-md-2 mb-4">
-        <h6 class="fw-bold mb-3">Quick Link</h6>
-        <ul class="list-unstyled small">
-          <li><a href="#" class="text-secondary text-decoration-none">Home</a></li>
-          <li><a href="#" class="text-secondary text-decoration-none">News</a></li>
-          <li><a href="#" class="text-secondary text-decoration-none">Contact</a></li>
-        </ul>
-      </div>
+    <footer class=" text-light pt-5 pb-4 mt-5 border-top border-secondary">
+        <div class="container inter">
+        <div class="row">
+            <div class="col-md-4 mb-4">
+            <h6 class="fw-bold mb-3">About</h6>
+            <p class="small text-secondary">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+            </p>
+            <p class="mb-1 small text-secondary"><span class="fw-bold text-light">Email</span> : info@jstemplate.net</p>
+            <p class="small text-secondary"><span class="fw-bold text-light">Phone</span> : 880 123 456 789</p>
+            </div>
             <div class="col-md-2 mb-4">
-        <h6 class="fw-bold mb-3">Category</h6>
-        <ul class="list-unstyled small">
-          <li><a href="#" class="text-secondary text-decoration-none">Home</a></li>
-          <li><a href="#" class="text-secondary text-decoration-none">News</a></li>
-          <li><a href="#" class="text-secondary text-decoration-none">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>  
-</footer>
+            <h6 class="fw-bold mb-3">Quick Link</h6>
+            <ul class="list-unstyled small">
+                <li><a href="#" class="text-secondary text-decoration-none">Home</a></li>
+                <li><a href="#" class="text-secondary text-decoration-none">News</a></li>
+                <li><a href="#" class="text-secondary text-decoration-none">Contact</a></li>
+            </ul>
+            </div>
+            <div class="col-md-2 mb-4">
+                <h6 class="fw-bold mb-3">Category</h6>
+                <ul class="list-unstyled small">
+                <li><a href="index.html" class="text-secondary text-decoration-none">Home</a></li>
+                <li><a href="#" class="text-secondary text-decoration-none">News</a></li>
+                <li><a href="#" class="text-secondary text-decoration-none">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        </div>  
+    </footer>
+    <footer>
+        <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8 border-secondary border-top"></div>
+        <div class="col-sm-2"></div>
+        </div>
+        <div class="container">
+        <div class="row inter">
+            <div class="col-md-4 mb-4 inter">
+            <p class="fw-bold mb-3 mt-5">Meta<span class="text-primary"><b>Blog</b></span></p>
+            </div>
+            <div class="col-md-2 text-secondary">
+            <p class="mt-5 border-end">Terms Of Use</p>
+            </div>
+            <div class="col-md-2 text-secondary">
+                <p class=" mb-3 mt-5 border-end">Privacy Policy</p>
+            </div>
+            <div class="col-md-2  text-secondary">  
+                <p class=" mb-3 mt-5">Cookie Policy</p>
+            </div>
+        </div>
+        </div>  
+    </footer>
 
 </body>
 </html>
