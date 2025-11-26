@@ -66,6 +66,10 @@
 
     .input-color {
       background-color: #1d2233;
-      color: #dadada;
+      color: #ffffff;
       border: 1px solid #3a3a4a
+    }
+
+    .input-color::placeholder{
+      color: white;
     }
