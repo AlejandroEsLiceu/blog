@@ -11,3 +11,11 @@ Pots visitar el blog aquí:
 
 🌐 **Accés al blog:**  
 https://alejandroesliceu.github.io/blog/
+
+## 🛠️ Tecnologies utilitzades
+
+- **HTML5**
+- **CSS3**
+- **Bootstrap 5**
+- **GitHub Pages**
+
