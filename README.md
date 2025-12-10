@@ -19,3 +19,9 @@ https://alejandroesliceu.github.io/blog/
 - **Bootstrap 5**
 - **GitHub Pages**
 
+## 🚀 Funcionalitats
+- Llistat de posts estilitzat amb Bootstrap Cards.
+- Navbar responsive.
+- Secció principal (hero) amb text destacat.
+- Footer informatiu.
+- Disseny coherent basat en una plantilla de Figma.
